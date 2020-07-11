@@ -441,20 +441,20 @@ th {
 .flaticon-black406:before {
   content: "\e000"; }
 
-.flaticon-cogwheel28:before {
-  content: "\e001"; }
+/*.flaticon-cogwheel28:before {
+  content: "\e001"; }*/
 
 .flaticon-command9:before {
   content: "\e002"; }
 
-.flaticon-computer1:before {
-  content: "\e003"; }
+/*.flaticon-computer1:before {
+  content: "\e003"; }*/
 
 .flaticon-computer3:before {
   content: "\e004"; }
 
-.flaticon-computers13:before {
-  content: "\e005"; }
+/*.flaticon-computers13:before {
+  content: "\e005"; }*/
 
 .flaticon-computers3:before {
   content: "\e006"; }
@@ -468,8 +468,8 @@ th {
 .flaticon-github:before {
   content: "\e009"; }
 
-.flaticon-hosting:before {
-  content: "\e00a"; }
+/*.flaticon-hosting:before {
+  content: "\e00a"; }*/
 
 .flaticon-light61:before {
   content: "\e00b"; }
@@ -637,8 +637,10 @@ h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_sm
     margin: 30px 0 0 30px; } }
 
 header {
-  background: url(../img/galway2.jpg) center center;
-  background-size: cover; }
+  background: url(../img/bg.jpg) center center;
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-size: cover }
   @media only screen and (min-width: 220px) {
     header {
       height: 300px; } }
@@ -647,7 +649,7 @@ header {
       height: 390px; } }
   @media only screen and (min-width: 1070px) {
     header {
-      height: 450px; } }
+      height: 750px; } }
   header nav {
     float: right;
     margin: 30px 30px 30px; }
@@ -725,9 +727,12 @@ footer {
 
 @media only screen and (min-width: 220px) {
   .about-lock {
-    margin: auto; }
+    margin: auto;
+    display: block; }
     .about-lock .face-img {
-      height: 180px;
+   height: 180px;
+   position: absolute;
+
       width: 180px;
       display: -webkit-box;
       display: -moz-box;
@@ -735,8 +740,9 @@ footer {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flexbox;
-      display: flex;
-      margin: auto;
+
+      /*margin: 20px 650px 20px 400px;*/
+     /* margin: 40px auto 40px;*/
       border-radius: 60%;
       background: url(../img/face.JPG) no-repeat; }
     .about-lock .face1-img {
@@ -749,7 +755,7 @@ footer {
       -webkit-perspective: 1000;
               perspective: 1000;
       height: 200px;
-      width: 200px;
+      width: 100%;
       border-radius: 50%;
       -webkit-box-ordinal-group: 3;
       box-ordinal-group: 3;
@@ -758,39 +764,45 @@ footer {
       order: 3;
       -ms-flex-order: 3; }
       .about-lock .flip-container:hover .flipper, .about-lock .flip-container.hover .flipper {
-        -webkit-transform: rotateY(180deg);
-                transform: rotateY(180deg); }
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg); }
     .about-lock .front, .about-lock .back {
       height: 200px;
       width: 200px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      margin:auto; }
     .about-lock .flipper {
       -webkit-transition: 0.6s;
               transition: 0.6s;
       -webkit-transform-style: preserve-3d;
               transform-style: preserve-3d;
-      position: relative; }
+      position: relative; 
+     margin:auto;}
     .about-lock .front, .about-lock .back {
       -webkit-backface-visibility: hidden;
               backface-visibility: hidden;
       position: absolute;
       top: 0;
-      left: 0; }
+      left: 0; 
+     margin:auto;}
     .about-lock .front {
       z-index: 2;
+      position: relative;
       -webkit-transform: rotateY(0deg);
-              transform: rotateY(0deg); }
+              transform: rotateY(0deg); 
+             margin:auto;}
     .about-lock .back {
-      -webkit-transform: rotateY(180deg);
-              transform: rotateY(180deg); }
-    .about-lock .flaticon-cogwheel28 {
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+               margin:auto; }
+    /*.about-lock .flaticon-cogwheel28 {
       display: none; }
     .about-lock .flaticon-computer1 {
       display: none; }
     .about-lock .flaticon-hosting {
       display: none; }
     .about-lock .flaticon-computers13 {
-      display: none; } }
+      display: none; }*/ }
 
 @media only screen and (min-width: 650px) {
   .about-lock {
@@ -818,8 +830,9 @@ footer {
     -ms-justify-content: space-between;
     -o-justify-content: space-between;
     justify-content: space-between;
-    -ms-flex-pack: justify; }
-    .about-lock .flaticon-cogwheel28 {
+    -ms-flex-pack: justify;
+     margin:auto; }
+    /*.about-lock .flaticon-cogwheel28 {
       -webkit-box-ordinal-group: 1;
       box-ordinal-group: 1;
       -webkit-order: 1;
@@ -850,22 +863,22 @@ footer {
       -moz-order: 5;
       order: 5;
       -ms-flex-order: 5;
-      display: block; }
-    .about-lock .glyph-icon:hover {
+      display: block; }*/
+  /*  .about-lock .glyph-icon:hover {
       -webkit-transform: scale(1.2);
-      transform: scale(1.2); }
-    .about-lock .glyph-icon:before {
+      transform: scale(1.2); }*/
+  /*  .about-lock .glyph-icon:before {
       display: block;
       font-size: 60px;
       line-height: 70px;
       color: #303e49;
       -webkit-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s;
-      margin-left: 0; } }
+      margin-left: 0; }*/ }
 
-@media only screen and (min-width: 1070px) {
+/*@media only screen and (min-width: 1070px) {
   .about-lock {
-    max-width: 980px; } }
+    max-width: 980px; } }*/
 
 .blurb {
   max-width: 750px;
