@@ -638,9 +638,9 @@ h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_sm
 
 header {
   background: url(../img/bg.jpg) center center;
-  background-repeat: no-repeat
-  background-attachment: fixed
-  background-size: cover }
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
   @media only screen and (min-width: 220px) {
     header {
       height: 300px; } }
