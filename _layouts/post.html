@@ -59,18 +59,32 @@ comments: true
 <div class="post-header">
   <h1 class="post-title">{{ page.title }}</h1>
 </div>
+
 <div class="post-header">
-  <p class="post-meta">{{ page.date | date: "%B %-d, %Y — %H:%M" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 </div>
 
-<div class="post-wrapper">
-  <article class="post-content">
-    <div class = "blurb-blog">
-    {{ content }}
-   </div>
-  </article>
 
+<div class="post-header">
+	<!-- <div class="post-wrapper"> -->
+	  <!-- <article class="post-content"> -->
+		<div class = "blurb-blog">
+		  <p class="post-meta">
+		  {{page.desc}}
+		  </p>
+		</div>
+	  <!-- </article>  -->
+	<!-- </div>  -->
+  </div> 
 
+  <div class="post-header">
+	<a class="post-meta" href="{{ page.projecturl }}"  style="color:#2980b9"> {{page.proj_detail}} </a>
+  </div>
+
+  <div class="post-header">
+	<a class="post-meta" href="{{ page.report }}"  style="color:#2980b9"> Report </a>
+  </div>
+  
 </div>
 <div class="comment">
   {% if page.comments %}

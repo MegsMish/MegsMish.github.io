@@ -24,10 +24,19 @@ layout: default
         <!-- </article>  -->
       <!-- </div>  -->
     </div> 
-    
+
     <div class="post-header">
-      <p class="post-meta">{{ post.date | date: "%B %-d, %Y — %H:%M" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+      <a class="post-meta" href="{{ post.projecturl }}"  style="color:#2980b9"> {{post.proj_detail}} </a>
     </div>
+
+    <div class="post-header">
+      <a class="post-meta" href="{{ post.report }}"  style="color:#2980b9"> Report </a>
+    </div>
+
+    <div class="post-header">
+      <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+    </div>
+
 
   {% endfor %}
   <hr class="bar-blog"> </hr>
