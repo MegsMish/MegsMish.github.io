@@ -3,6 +3,18 @@ layout: post
 title:  "Blog entry one"
 date:   2015-10-26 16:51:11
 categories: temp
+
+---
+layout: post
+title:  "Anomaly Detection on Procurement Data "
+date:   2020-5-15 16:51:11
+categories: blog
+proj_detail: The Wharton School | 2020
+desc:  Developed models to identify high risk behavior with the university’s procurement cards and other procurement methods.
+Various anomaly detetion methods such as  Local Outlier Factor, Isolation Forest, K-Means clustering and Statistical approaches were used for detecting fraudulent transactions. I served as the project lead (part of Penn Data Science group) under Eric Bradlow, Vice-Dean of Analytics at The Wharton School, University of Pennsylvania.
+---
+
+
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget libero vel turpis eleifend convallis vel vitae est. Suspendisse mattis ut nulla dapibus ultricies. Suspendisse feugiat felis mi, sit amet pharetra massa volutpat sit amet. Morbi gravida, libero sit amet lacinia tristique, ipsum lacus fermentum eros, ut sollicitudin lacus massa ut leo. In quis urna eu lorem sagittis posuere. Pellentesque tempus consequat urna. Pellentesque blandit elit ac nulla semper vestibulum. Quisque ultrices vestibulum nisi, nec rhoncus est viverra eget. Interdum et malesuada fames ac ante ipsum primis in faucibus.

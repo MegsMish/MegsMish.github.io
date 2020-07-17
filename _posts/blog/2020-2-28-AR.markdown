@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Augmented Reality"
+date:   2020-2-28 18:11:16
+categories: blog
+projecturl: "https://github.com/meghamishra/Augmented-Reality"
+proj_detail: Course Project | Machine Perception, 2020
+report: https://drive.google.com/file/d/1CI2-j2uHat0GY9XmlZTHlE8pVrwfBz69/view?usp=sharing
+desc: Given the information of the April Tag and camers intrincis, recovering the camera Pose of a Bird using two different approaches 1) PnP with coplanar assumption and 2) P3P followed by Procrustes.  In the first approach, we use homography to find the "H" matrix, which is later used to find the rotation(R) and translation(T) matrices. In the second approach,  "Review and Analysis  of  Solutions of the Three Point  Perspective Pose Estimation Problem" (https://haralick-org.torahcode.us/journals/three_point_perspective.pdf) paper was implemented and a 4-degree polynomial was solved to get the points in camera co-ordinates, which are later used to find R and T matrices.
+
+---
