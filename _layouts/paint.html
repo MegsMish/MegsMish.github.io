@@ -6,175 +6,142 @@ layout: default
 
 
 <style>
-
-	body {
-	  font-family: Arial;
-	  margin: 0;
-	}
-	
 	* {
 	  box-sizing: border-box;
 	}
 	
-	img {
+	body {
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	.header {
+	  text-align: center;
+	  padding: 32px;
+	}
+	
+	.row {
+	  display: -ms-flexbox; /* IE 10 */
+	  display: flex;
+	  -ms-flex-wrap: wrap; /* IE 10 */
+	  flex-wrap: wrap;
+	  padding: 0 4px;
+	}
+	.ex1 {
+  font-size: 30px;
+}
+	/* Create two equal columns that sits next to each other */
+	.column {
+	  -ms-flex: 50%; /* IE 10 */
+	  flex: 50%;
+	  padding: 0 4px;
+	}
+	
+	.column img {
+	  margin-top: 8px;
 	  vertical-align: middle;
 	}
 	
-	/* Position the image container (needed to position the left and right arrows) */
-	.container {
-	  position: relative;
-	}
-	
-	/* Hide the images by default */
-	.mySlides {
-	  display: none;
-	}
-	
-	/* Add a pointer when hovering over the thumbnail images */
-	.cursor {
+	/* Style the buttons */
+	.btn {
+	  border: none;
+	  outline: none;
+	  padding: 10px 16px;
+	  background-color: #f1f1f1;
 	  cursor: pointer;
+	  font-size: 18px;
 	}
 	
-	/* Next & previous buttons */
-	.prev,
-	.next {
-	  cursor: pointer;
-	  position: absolute;
-	  top: 40%;
-	  width: auto;
-	  padding: 16px;
-	  margin-top: -50px;
+	.btn:hover {
+	  background-color: #ddd;
+	}
+	
+	.btn.active {
+	  background-color: #666;
 	  color: white;
-	  font-weight: bold;
-	  font-size: 20px;
-	  border-radius: 0 3px 3px 0;
-	  user-select: none;
-	  -webkit-user-select: none;
-	}
-	
-	/* Position the "next button" to the right */
-	.next {
-	  right: 0;
-	  border-radius: 3px 0 0 3px;
-	}
-	
-	/* On hover, add a black background color with a little bit see-through */
-	.prev:hover,
-	.next:hover {
-	  background-color: rgba(0, 0, 0, 0.8);
-	}
-	
-	/* Number text (1/3 etc) */
-	.numbertext {
-	  color: #f2f2f2;
-	  font-size: 12px;
-	  padding: 8px 12px;
-	  
-	  position: relative;;
-	  top: 0;
-	}
-	
-	/* Container for image text */
-	.caption-container {
-	  text-align: center;
-	  background-color: #222;
-	  padding: 2px 16px;
-	  color: white;
-	}
-	
-	.row:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-	}
-	
-	/* Six columns side by side */
-	.column {
-	  float: left;
-	  width: 16.66%;
-	}
-	
-	/* Add a transparency effect for thumnbail images */
-	.demo {
-	  opacity: 0.6;
-	}
-	
-	.active,
-	.demo:hover {
-	  opacity: 1;
 	}
 	</style>
+	</head>
 	<body>
 	
-	<h2 style="text-align:center">Slideshow Gallery</h2>
+	<!-- Header -->
+	<div class="header" id="myHeader">
+	  <p class="ex1"><b>My paintings</b></p>
+	  <!-- <p>Click on the buttons to change the grid view.</p> -->
+	  <button class="btn active" onclick="four()">4</button>
+	  <!-- <button class="btn" onclick="two()">2</button>
+	  <button class="btn" onclick="one()">1</button> -->
+	</div>
 	
-	<div class="container">
-	  <div class="mySlides">
-		<div class="numbertext">1 / 3</div>
-		<img src="../assets/img/paint/img1.jpg" width=500 height=500>
+	<!-- Photo Grid -->
+	<div class="row"> 
+	  <div class="column">
+		<img src="../assets/img/paint/img5.jpg" style="width:100%">
+		<img src="../assets/img/paint/img7.jpg" style="width:100%">
+		<img src="../assets/img/paint/img8.jpg" style="width:100%">
+		<img src="../assets/img/paint/img4.jpg" style="width:100%">
 	  </div>
-	
-	  <div class="mySlides">
-		<div class="numbertext">2 / 3</div>
-		<img src="../assets/img/paint/img2.jpg" style="width:100%">
+	  <div class="column">
+		<img src="../assets/img/paint/img6.jpg" style="width:100%">
+		<img src="../assets/img/paint/img9.jpg" style="width:100%">
+		<img src="../assets/img/paint/img12.jpg" style="width:100%">
+		<img src="../assets/img/paint/img10.jpg" style="width:100%">
+	  </div>  
+	  <div class="column">
+		<img src="../assets/img/paint/img1.jpg" style="width:100%">
+		<img src="../assets/img/paint/img17.jpg" style="width:100%">
+		<img src="../assets/img/paint/img3.jpg" style="width:100%">
+		<img src="../assets/img/paint/img13.jpg" style="width:100%">
 	  </div>
-	
-	  <div class="mySlides">
-		<div class="numbertext">3 / 3</div>
-		<img src="../assets/img/paint/img3.jpg"style="width:100%">
-	  </div>
-		
-	  <a class="prev" onclick="plusSlides(-1)">❮</a>
-	  <a class="next" onclick="plusSlides(1)">❯</a>
-	
-	  <div class="caption-container">
-		<p id="caption"></p>
-	  </div>
-	
-	  <div class="row">
-		<div class="column">
-		  <img class="demo cursor" src="../assets/img/paint/rsz1.jpg" style="width:100%" onclick="currentSlide(1)" alt="img1">
-		</div>
-		<div class="column">
-		  <img class="demo cursor" src="../assets/img/paint/img2.jpg" style="width:100%" onclick="currentSlide(2)" alt="img2">
-		</div>
-		<div class="column">
-		  <img class="demo cursor" src="../assets/img/paint/img3.jpg" style="width:100%" onclick="currentSlide(3)" alt="img3">
-		</div>
+	  <div class="column">
+		<img src="../assets/img/paint/img15.jpg" style="width:100%">
+		<img src="../assets/img/paint/img11.jpg" style="width:100%">
+		<img src="../assets/img/paint/img14.jpg" style="width:100%">
+		<img src="../assets/img/paint/img16.jpg" style="width:100%">
 	  </div>
 	</div>
 	
 	<script>
-	var slideIndex = 1;
-	showSlides(slideIndex);
+	// Get the elements with class="column"
+	var elements = document.getElementsByClassName("column");
 	
-	function plusSlides(n) {
-	  showSlides(slideIndex += n);
+	// Declare a loop variable
+	var i;
+	
+	// Full-width images
+	// function one() {
+	// 	for (i = 0; i < elements.length; i++) {
+	// 	elements[i].style.msFlex = "100%";  // IE10
+	// 	elements[i].style.flex = "100%";
+	//   }
+	// }
+	
+	// Two images side by side
+	// function two() {
+	//   for (i = 0; i < elements.length; i++) {
+	// 	elements[i].style.msFlex = "50%";  // IE10
+	// 	elements[i].style.flex = "50%";
+	//   }
+	// }
+	
+	// Four images side by side
+	function four() {
+	  for (i = 0; i < elements.length; i++) {
+		elements[i].style.msFlex = "25%";  // IE10
+		elements[i].style.flex = "25%";
+	  }
 	}
 	
-	function currentSlide(n) {
-	  showSlides(slideIndex = n);
-	}
-	
-	function showSlides(n) {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("demo");
-	  var captionText = document.getElementById("caption");
-	  if (n > slides.length) {slideIndex = 1}
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-		  slides[i].style.display = "none";
-	  }
-	  for (i = 0; i < dots.length; i++) {
-		  dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block";
-	  dots[slideIndex-1].className += " active";
-	  captionText.innerHTML = dots[slideIndex-1].alt;
+	// Add active class to the current button (highlight it)
+	var header = document.getElementById("myHeader");
+	var btns = header.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function() {
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	  });
 	}
 	</script>
-		
+	
 	</body>
-	
-	
