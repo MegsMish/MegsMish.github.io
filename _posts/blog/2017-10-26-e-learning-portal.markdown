@@ -2,6 +2,7 @@
 layout: post
 title:  "E-Learning Portal "
 date:   2017-10-28 16:51:11
+datemain:   2017-10-28 16:51:11
 categories: blog
 proj_detail: Course Project | Internet Web Systems 2017
 projecturl: "https://github.com/meghamishra/e-learning-portal"

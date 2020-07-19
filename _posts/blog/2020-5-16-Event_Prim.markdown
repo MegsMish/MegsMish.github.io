@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  " Event-Primitives Extraction "
-date:   2020-5-9 16:51:11
+date:   2020-6-20 16:51:11
+datemain: 2020-5-20 16:51:11
 categories: blog
 proj_detail: Research Assistant | University of Pennsylvania, 2020
 projecturl: "https://www.darpa.mil/program/knowledge-directed-artificial-intelligence-reasoning-over-schemas"

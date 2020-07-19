@@ -30,15 +30,26 @@ layout: default
     </div> 
 
     <div class="post-header">
+      {% if  post.projecturl %}
       <a class="post-meta" href="{{ post.projecturl }}"  style="color:#2980b9"> {{post.proj_detail}} </a>
+      {% else %}
+      <div class = "blurb-blog">
+        <p class="post-meta">
+          {{post.proj_detail}}
+        </p>
+      </div>
+     
+      {% endif %}
     </div>
 
     <div class="post-header">
+      {% if  post.report %}
       <a class="post-meta" href="{{ post.report }}"  style="color:#2980b9"> Report </a>
+      {% endif %}
     </div>
 
     <div class="post-header">
-      <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+      <p class="post-meta">{{ post.datemain | date: "%B %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
     </div>
 
 

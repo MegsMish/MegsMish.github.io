@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  " NER using Active Learning"
-date:   2020-5-4 18:11:16
+date:   2020-2-4 18:11:16
+datemain: 2020-5-4 18:11:16
 categories: blog
 proj_detail: Course Project | Computer Linguistics, 2020
 projecturl: "https://github.com/AshishMehtaIO/active-learning-NER"

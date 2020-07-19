@@ -495,6 +495,9 @@ th {
 .flaticon-youtube31:before {
   content: "\e012"; }
 
+  .flaticon-quora:before {
+    content: "\e013"; }
+
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #303e49;
@@ -638,8 +641,8 @@ h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_sm
 
 header {
   background: url(../img/bg.jpg) center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-repeat: no-repeat;
+  background-attachment: fixed; */
   background-size: cover; }
   @media only screen and (min-width: 220px) {
     header {
@@ -649,16 +652,16 @@ header {
       height: 390px; } }
   @media only screen and (min-width: 1070px) {
     header {
-      height: 750px; } }
+      height: 450px; } }
   header nav {
     float: right;
     margin: 30px 30px 30px; }
     header nav a {
       margin-left: 20px;
       color: rgba(0, 0, 0, 0.5); }
-      @media only screen and (min-width: 220px) {
+      /* @media only screen and (min-width: 220px) {
         header nav a {
-          display: none; } }
+          display: none; } } */
       @media only screen and (min-width: 650px) {
         header nav a {
           display: inline-block; } }
@@ -705,7 +708,8 @@ header {
     color: rgba(0, 0, 0, 0.5); }
 
 footer {
-  background: url(../img/galway3.jpg) center center;
+  background: url(../img/bg.jpg) center center; 
+  /* at bottom */
   background-size: cover; }
   footer .lockup {
     padding: 50px 30px; }
@@ -1390,7 +1394,8 @@ form {
 
 #h_small {
   height: 170px;
-  background: url(../img/galway2.jpg) center center;
+  background: url(../img/bgtop.jpg) center center;
+  /* other pages */
   background-size: cover; }
   #h_small #nav_small {
     float: right;
