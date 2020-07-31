@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Prediction and analysis of reception of comments on The New York Times articles "
-date:   2019-10-9 16:51:11
+date:   2020-4-4 16:51:11
+datemain: 2019-12-15 16:51:11
 categories: blog
 proj_detail: Course Project | Machine Learning, 2019
 projecturl: "https://github.com/meghamishra/Predicting-Reception-Of-Comments-On-Articles-Of-New-York-Times"
