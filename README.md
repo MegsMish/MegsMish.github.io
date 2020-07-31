@@ -1,8 +1,12 @@
 =============================
+
 Sleek Blog
+
 =============================
 
-[Live Website](http://gearoidoconnor.ie)
+Source code of my portfolio: 
+
+[Live Website](http://megsmish.github.io)
 
 
 A blog project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
@@ -30,3 +34,5 @@ This will give you file watching, browser synchronisation, auto-rebuild, CSS inj
 ```shell
 $ gulp watch
 ```
+
+credit: Gearoid O' Connor (https://github.com/bawn92)
