@@ -1,8 +1,12 @@
 =============================
+
 Sleek Blog
+
 =============================
 
-[Live Website](http://gearoidoconnor.ie)
+Source code if my portfolio: 
+
+[Live Website](http://megsmish.github.io)
 
 
 A blog project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
