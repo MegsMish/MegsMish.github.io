@@ -4,7 +4,7 @@ Sleek Blog
 
 =============================
 
-Source code if my portfolio: 
+Source code of my portfolio: 
 
 [Live Website](http://megsmish.github.io)
 
@@ -34,3 +34,5 @@ This will give you file watching, browser synchronisation, auto-rebuild, CSS inj
 ```shell
 $ gulp watch
 ```
+
+credit: Gearoid O' Connor (https://github.com/bawn92)
